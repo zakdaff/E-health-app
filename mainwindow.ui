@@ -1,0 +1,2578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1152</width>
+    <height>872</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestion des visites medicales</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>0</y>
+     <width>961</width>
+     <height>871</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <property name="documentMode">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="tab">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <attribute name="title">
+     <string>Consultation</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit_prenom">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>270</y>
+       <width>201</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_professionControl">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>570</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_adresseTravail">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>660</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_RechercherEmploye">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>171</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rechercher un patient : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_NomControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>200</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_PassportControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>400</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_nationnalite">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>400</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nom Prenom : </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_NSS">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>370</y>
+       <width>41</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>37</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>310</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>infirmier(e)</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_IDSearch">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>780</y>
+       <width>441</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Activer la recherche instantanée par Numéro Consultation</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>310</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Consultation</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>800</y>
+       <width>861</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_adresse">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>630</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Adresse :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_ServiceControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>260</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_SexeControl">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>340</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_etatCivil">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>370</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Service :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_CIN">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>460</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Expectoration :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_adresse">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>630</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Annuler">
+     <property name="geometry">
+      <rect>
+       <x>355</x>
+       <y>80</y>
+       <width>100</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nettoyer</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_StatistiquesEmploye">
+     <property name="geometry">
+      <rect>
+       <x>585</x>
+       <y>80</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Statistiques</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_PrenomControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>230</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_SortieApplication">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>810</y>
+       <width>611</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_Nom">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>140</y>
+       <width>401</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="maxVisibleItems">
+      <number>2</number>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_supprmier">
+     <property name="geometry">
+      <rect>
+       <x>245</x>
+       <y>80</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Supprimer</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_PasswordConfirmControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>490</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Save">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>80</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ajouter</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_telephoneTravail">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>690</y>
+       <width>181</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Telephone :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_contrat">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>600</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Adresse :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_profession">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>570</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_nom">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>240</y>
+       <width>201</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_EtatCivilControl">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>370</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="Line" name="line_7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>750</y>
+       <width>401</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_PasswordControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>460</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_DateNaissanceControl">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>430</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_mailTravail">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>720</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_dateNaissance">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>580</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date  :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_mailTravail">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>720</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>E-mail  :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_passport">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>430</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Fatigue : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_adresseTravail">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>660</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Adresse de travail :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_ContratControl">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>600</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_prenom">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>270</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Prenom du patient :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_ChargerImage">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>80</y>
+       <width>101</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Charger image </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_nationnalite">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>400</y>
+       <width>131</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_NSS">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>370</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temperature: </string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>320</y>
+       <width>401</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_EtatCivil">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>370</y>
+       <width>111</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>-1</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Radiologie/IRM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cardiologie</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Financiere</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit_dateNaissance">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>580</y>
+       <width>110</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="date">
+      <date>
+       <year>1800</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>540</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Hopital</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_sexe">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>340</y>
+       <width>111</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>-1</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Homme</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Femme</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_profession">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>570</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nom :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>240</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nom du patient :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_ID">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>400</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Toux sèche :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_sexe">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>340</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sexe : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_IDControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>370</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_motdepasse">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>490</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Essoufflements :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_AdresseTravailControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>600</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>600</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Contacte Informations</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_image">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>150</y>
+       <width>161</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>IMAGE_</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_SortieApplicationMessage">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>810</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sortie de l'application :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_TelephoneTravailControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>630</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_confirmermotdepasse">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>520</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gorge irritée :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_telephoneTravail">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>690</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>320</y>
+       <width>391</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_NationnaliteControl">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>400</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_mailControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>660</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_NssControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>340</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_CinControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>430</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_AdresseControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>570</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>740</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Options</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>550</y>
+       <width>391</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>610</y>
+       <width>401</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Edit">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>80</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modifier</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_DateEmbouchementControl">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>630</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_ListingEmploye">
+     <property name="geometry">
+      <rect>
+       <x>475</x>
+       <y>80</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Listing</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_102">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>951</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>graphique.jpg</pixmap>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_service_2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>400</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>-1</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Oui</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Non</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_service_3">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>430</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>-1</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>tres fatigué</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>peu fatigué</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Non</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_service_4">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>460</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>-1</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Anormal</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Normal</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Non</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_service_5">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>490</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>-1</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Oui</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Non</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_service_6">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>520</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>-1</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Oui</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Non</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>340</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Numero Consultation</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>340</y>
+       <width>141</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_service_7">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>550</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>-1</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Oui</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Non</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>550</y>
+       <width>131</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Perte de l'odorat :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>210</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Numero Patient :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>200</y>
+       <width>201</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_profession_3">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>600</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_contrat_3">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>640</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ville :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_profession_4">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>640</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tunis</string>
+     </property>
+    </widget>
+    <zorder>label_102</zorder>
+    <zorder>lineEdit_prenom</zorder>
+    <zorder>label_professionControl</zorder>
+    <zorder>lineEdit_adresseTravail</zorder>
+    <zorder>label_RechercherEmploye</zorder>
+    <zorder>label_NomControl</zorder>
+    <zorder>label_PassportControl</zorder>
+    <zorder>label_nationnalite</zorder>
+    <zorder>lineEdit_NSS</zorder>
+    <zorder>label_15</zorder>
+    <zorder>checkBox_IDSearch</zorder>
+    <zorder>label_7</zorder>
+    <zorder>line_6</zorder>
+    <zorder>label_adresse</zorder>
+    <zorder>label_ServiceControl</zorder>
+    <zorder>label_SexeControl</zorder>
+    <zorder>label_etatCivil</zorder>
+    <zorder>label_CIN</zorder>
+    <zorder>lineEdit_adresse</zorder>
+    <zorder>pushButton_Annuler</zorder>
+    <zorder>pushButton_StatistiquesEmploye</zorder>
+    <zorder>label_PrenomControl</zorder>
+    <zorder>label_SortieApplication</zorder>
+    <zorder>comboBox_Nom</zorder>
+    <zorder>pushButton_supprmier</zorder>
+    <zorder>label_PasswordConfirmControl</zorder>
+    <zorder>pushButton_Save</zorder>
+    <zorder>label_telephoneTravail</zorder>
+    <zorder>label_contrat</zorder>
+    <zorder>lineEdit_profession</zorder>
+    <zorder>lineEdit_nom</zorder>
+    <zorder>label_EtatCivilControl</zorder>
+    <zorder>line_7</zorder>
+    <zorder>label_PasswordControl</zorder>
+    <zorder>label_DateNaissanceControl</zorder>
+    <zorder>lineEdit_mailTravail</zorder>
+    <zorder>label_dateNaissance</zorder>
+    <zorder>label_mailTravail</zorder>
+    <zorder>label_passport</zorder>
+    <zorder>label_adresseTravail</zorder>
+    <zorder>label_ContratControl</zorder>
+    <zorder>label_prenom</zorder>
+    <zorder>pushButton_ChargerImage</zorder>
+    <zorder>lineEdit_nationnalite</zorder>
+    <zorder>label_NSS</zorder>
+    <zorder>line_2</zorder>
+    <zorder>comboBox_EtatCivil</zorder>
+    <zorder>dateEdit_dateNaissance</zorder>
+    <zorder>label_24</zorder>
+    <zorder>comboBox_sexe</zorder>
+    <zorder>label_profession</zorder>
+    <zorder>label</zorder>
+    <zorder>label_ID</zorder>
+    <zorder>label_sexe</zorder>
+    <zorder>label_IDControl</zorder>
+    <zorder>label_motdepasse</zorder>
+    <zorder>label_AdresseTravailControl</zorder>
+    <zorder>label_20</zorder>
+    <zorder>label_image</zorder>
+    <zorder>label_SortieApplicationMessage</zorder>
+    <zorder>label_TelephoneTravailControl</zorder>
+    <zorder>label_confirmermotdepasse</zorder>
+    <zorder>lineEdit_telephoneTravail</zorder>
+    <zorder>line_3</zorder>
+    <zorder>label_NationnaliteControl</zorder>
+    <zorder>label_mailControl</zorder>
+    <zorder>label_NssControl</zorder>
+    <zorder>label_CinControl</zorder>
+    <zorder>label_AdresseControl</zorder>
+    <zorder>label_25</zorder>
+    <zorder>line_5</zorder>
+    <zorder>line_4</zorder>
+    <zorder>pushButton_Edit</zorder>
+    <zorder>label_DateEmbouchementControl</zorder>
+    <zorder>pushButton_ListingEmploye</zorder>
+    <zorder>comboBox_service_2</zorder>
+    <zorder>comboBox_service_3</zorder>
+    <zorder>comboBox_service_4</zorder>
+    <zorder>comboBox_service_5</zorder>
+    <zorder>comboBox_service_6</zorder>
+    <zorder>label_10</zorder>
+    <zorder>lineEdit</zorder>
+    <zorder>comboBox_service_7</zorder>
+    <zorder>label_12</zorder>
+    <zorder>label_13</zorder>
+    <zorder>lineEdit_3</zorder>
+    <zorder>lineEdit_profession_3</zorder>
+    <zorder>label_contrat_3</zorder>
+    <zorder>lineEdit_profession_4</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Visite</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit_IDCongeEmploye">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>200</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_IDCongeEmploye">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>200</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Numéro visite :</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit_DebutConge">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>340</y>
+       <width>110</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="date">
+      <date>
+       <year>1800</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_DateDebutConge">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>340</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date début visite :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_DateFinConge">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>370</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date fin visite :</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit_FinConge">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>370</y>
+       <width>110</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="date">
+      <date>
+       <year>1800</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="Line" name="line_8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>861</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_AjoutConge">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>80</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ajouter</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_ModifierConge">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>80</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modifier</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SupprimerConge">
+     <property name="geometry">
+      <rect>
+       <x>245</x>
+       <y>80</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Supprimer</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_commentaireResponsable">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>490</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Commentaire Patient : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_CommentaireEmploye">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>610</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Commentaire Doctor : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_IDCongeEmploye_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rechercher une visite : </string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_9">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>320</y>
+       <width>401</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_10">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>450</y>
+       <width>401</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>310</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Dates du visite :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>440</y>
+       <width>211</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Informations Visite :</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_11">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>780</y>
+       <width>861</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_SortieApplicationMessage_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>810</y>
+       <width>181</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sortie de l'application :</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_Responsable">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>490</y>
+       <width>291</width>
+       <height>81</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_Employe">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>590</y>
+       <width>291</width>
+       <height>151</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_IDCongeEmployeRechercher">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>140</y>
+       <width>391</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_NettoyerConge">
+     <property name="geometry">
+      <rect>
+       <x>355</x>
+       <y>80</y>
+       <width>100</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nettoyer</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_ListingConge">
+     <property name="geometry">
+      <rect>
+       <x>475</x>
+       <y>80</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Listing</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_IDCongeControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>200</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_DateDebutCongeControl">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>340</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_typeCongeControl_2">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>270</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_DateFinCongeControl">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>370</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_typeCongeControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>230</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SortieApplicationConge">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>810</y>
+       <width>601</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_103">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>891</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>graphique.jpg</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>250</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Medecin :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>250</y>
+       <width>201</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dr.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>ordonnance</string>
+    </attribute>
+    <widget class="Line" name="line_12">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>861</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_NettoyerPaiement">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>80</y>
+       <width>91</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Modifier</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_ListingPaiement">
+     <property name="geometry">
+      <rect>
+       <x>246</x>
+       <y>80</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Listing</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_IDPaiementEmployeRecherche">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>140</y>
+       <width>341</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_AjoutPaiement">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>80</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ajouter</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_IDCongeEmploye_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>221</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rechercher une ordonnance: </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_IDPaiementEmploye">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>180</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_IDCongeEmploye_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>180</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Numéro ordonnance :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_TypeConge_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>320</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Medecin :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_MontantTTC">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>320</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dr.</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit_Paiement">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>280</y>
+       <width>110</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="date">
+      <date>
+       <year>1800</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+    <widget class="Line" name="line_14">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>580</y>
+       <width>401</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>560</y>
+       <width>261</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Tests nécessaires :</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_PaiementResponsable">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>610</y>
+       <width>291</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_commentaireResponsable_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>610</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Faire au laboratoire : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_SortieApplicationMessage_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>810</y>
+       <width>391</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sortie de l'application :</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>780</y>
+       <width>861</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_IDPaiementControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>200</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_MontantControl">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>230</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_DatePaiementControl">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>340</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SortieApplicationPaiement">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>810</y>
+       <width>601</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_104">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>891</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>graphique.jpg</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_TypeConge_3">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>360</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Specialité :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_MontantTTC_2">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>360</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_TypeConge_5">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>400</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Patient :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_TypeConge_6">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>280</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_TypeConge_7">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>440</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Medicaments</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_TypeConge_9">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>500</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_IDPaiementEmploye_2">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>400</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="Line" name="line_18">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>210</y>
+       <width>401</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_PaiementResponsable_2">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>450</y>
+       <width>291</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_TypeConge_8">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>240</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hopitale :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_MontantTTC_3">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>240</y>
+       <width>201</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Aide Covid-19</string>
+    </attribute>
+    <widget class="Line" name="line_16">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>60</y>
+       <width>861</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_IDCongeEmploye_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Comment on peut attraper la maladie?</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_17">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>780</y>
+       <width>861</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_SortieApplicationMessage_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>810</y>
+       <width>181</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sortie de l'application :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="SortieApplicationPointage">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>810</y>
+       <width>601</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_RechercherPointageControl">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>140</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_105">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>10</y>
+       <width>551</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>graphique.jpg</pixmap>
+     </property>
+    </widget>
+    <widget class="Line" name="line_34">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>301</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_PaiementResponsable_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>291</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;Cette maladie se transmet&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;principalement par les &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff0000;&quot;&gt;gouttelettes&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff0000;&quot;&gt;respiratoires et le contact etroit&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff0000;&quot;&gt;avec les personnes malades&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;Quand vous eternuez ou toussez,&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;vous projetez des gouttelettes&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;respiratoires du votre nez et&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;bouche.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;Ces gouttelettes peuvent contenir&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;l'infection. Ceci est comment les&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;virus se transmettent.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;Generalement, vous devez etre&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;proche de la personne (&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff0000;&quot;&gt;moins que&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff0000;&quot;&gt;2 metres)&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt; pour que le virus se&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;transmet de cette maniere.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;II y a aussi la possibilitee de la&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff0000;&quot;&gt;transmission aerosole&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;, si vous etes&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;exposé a une haute concentration&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;pour une longue duree du temps et&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;dans un environnement clos.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_35">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>110</y>
+       <width>301</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_PaiementResponsable_6">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>140</y>
+       <width>291</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;Ne voyagez pas dans &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff0000;&quot;&gt;les regions affectes.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;Quand vous toussez ou eternuez,&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#00aa00;&quot;&gt; faites-le dans votre coude ou dans votre mouchoir&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;. Evitez d'utiliser vos mains.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#00aa00;&quot;&gt;Lavez-vous les mains&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;frequemment et soigneusement avec I'eau et le savon.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;Evitez les personnes evidemment &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff0000;&quot;&gt;malades et les lieux avec une haute&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff0000;&quot;&gt;concentration de personnes&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_PaiementResponsable_7">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>140</y>
+       <width>291</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:43px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:102%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:22pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;* Informez l'institution ou I'agence de sante dans votre pays par un numero d'urgence ou vous serez informes au detail. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:43px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:102%; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:43px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:102%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:24pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt; S'auto-isoler a la maison a ete recommande pour les personnes diagnostiquees avec COVID-19 et celles qui soupconnent qu'elles ont ete infectees. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:43px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:102%; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:43px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:102%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:24pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt; Les agences de sante publique ont publie des instructions d'auto-isolement qui incluent la notification des fournisseurs de soin de sante par telephone et la restriction de toutes les activites en exterieur, sauf pour obtenir du soin medical. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:43px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:102%; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:43px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:102%; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:24pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt; N'allez pas au travail, a l'ecole ou A  aux Iieux publiques.Eviter d'utiliser le transport publique , le covoiturage, ou les taxis.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:43px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:102%; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:43px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:102%; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; border-color:#000000; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; border-collapse:collapse;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot; bgcolor=&quot;#ffffff&quot;&gt;
+&lt;tr&gt;
+&lt;td bgcolor=&quot;#ffffff&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:7px; margin-right:19px; -qt-block-indent:0; text-indent:0px; line-height:14.4px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:24pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt; Ceux qui ont recemment voyage dans un pays ou la transmission est rapandue, ou qui ont ete en contact direct avec une personne diagnostiquee avec COVID-19, ont ete invites par les agences gouvernementales de sante a s'auto-mettre en quarantaine ou a pratiquer l'eloignement social pendant 14 jours, en les comptant du moment de la derniere&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:3px; margin-bottom:0px; margin-left:7px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:14.4px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;exposition possible.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:17px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:21.6px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:43px; margin-right:14px; -qt-block-indent:0; text-indent:0px; line-height:21.6px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:24pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;6&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt; Les tentatives pour soulager les symptomes comprennent la prise reguliere de medicaments contre le rhume (en vente libre), la consommation de beaucoup de liquides et le repos. Selon la gravite des symptomes, meme une oxygenotherapie, une&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:43px; margin-right:21px; -qt-block-indent:0; text-indent:0px; line-height:21.6px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Arial','Helvetica','sans-serif'; font-size:12pt; color:#222222; background-color:#ffffff; vertical-align:super;&quot;&gt;administration intraveineuse de liquides ou un soutien respiratoire peuvent etre necessaires.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_36">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>110</y>
+       <width>301</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_IDCongeEmploye_11">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>90</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Comment je peux me proteger</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_IDCongeEmploye_12">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>80</y>
+       <width>321</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Je pense que je suis infecté.
+qu'est ce que je devrais faire?</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_NettoyerPaiement_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>640</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Generer un pdf</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
